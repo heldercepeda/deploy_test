@@ -1,3 +1,4 @@
+import SimpleDateTime  from 'react-simple-timestamp-to-date';
 
 const NewsFeed = ({feedData}) => {
 
@@ -12,7 +13,7 @@ const NewsFeed = ({feedData}) => {
                         <div className="col-9">
                             <div className="card-body">
                                 <h5 className="card-title text-dark">{feedData.title}</h5>
-                                <p className="card-text"><small className="text-muted">{Date(feedData.published_on)}</small></p>
+                                <p className="card-text"><small className="text-muted">Publish on: {<SimpleDateTime dateSeparator="/" timeSeparator=":" format="YMD">{feedData.published_on}</SimpleDateTime>}</small></p>
                             </div>
                         </div>
                     </div>
