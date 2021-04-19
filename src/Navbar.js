@@ -1,6 +1,6 @@
 const Navbar = () => {
     return (
-        <div className="p-4">
+        <div className="p-4 border border-dark rounded-lg">
             <ul className="nav justify-content-end">
                 <li className="nav-item">
                     <a className="nav-link text-dark" href="/">Home</a>
