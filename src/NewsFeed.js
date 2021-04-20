@@ -38,10 +38,10 @@ const NewsFeed = () => {
             {
                 data && data.length > 0 && data.map((item) =>
                     <small key={item.id}>
-                        <div className="card border-dark mb-3">
+                        <div className="card border-dark mb-2">
                             <a href={item.url} rel="noreferrer noopener" target="_blank" className="text-decoration-none">
                                 <div className="row no-gutters">
-                                    <div className="col-3 p-3">
+                                    <div className="col-3 p-2">
                                         <img src={item.imageurl} className="card-img" alt="" />
                                     </div>
                                     <div className="col-9">
